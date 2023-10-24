@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(202, 197, 131);
+    margin: 0;
+    padding: 0;
+    font-family: Georgia;
+}
+
+.tituloPrincipal{
+    background-color: rgb(32, 32, 32);
+    color: white;
+    margin: 20px;
+    margin-left: 600px;
+    margin-right: 600px;
+    text-align: center;
+    padding: 20px;
+    font-family: "Kestrel Script Regular";
+    font-size: 70px;
+    border-radius: 20px;
+}
+
+.indice a{
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 2px;
+    border-color: white;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.indice a:hover{
+    background-color: white;
+    color: black;
+}
+
+.indice{
+    margin-top: 50px;
+    padding: 23px;
+    background-color: rgb(32, 32, 32);
+}
