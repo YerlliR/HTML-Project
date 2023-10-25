@@ -1,14 +1,18 @@
 body{
-    background-color: rgb(202, 197, 131);
+    background-color: rgb(192, 187, 120);
     margin: 0;
     padding: 0;
-    font-family: Georgia;
+}
+
+.encabezado{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(73, 73, 73);
+    padding-top: 50px;
 }
 
 .tituloPrincipal{
     background-color: rgb(32, 32, 32);
     color: white;
-    margin: 20px;
     margin-left: 600px;
     margin-right: 600px;
     text-align: center;
@@ -16,6 +20,18 @@ body{
     font-family: "Kestrel Script Regular";
     font-size: 70px;
     border-radius: 20px;
+}
+
+.tituloPrincipal a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.indice{
+    margin-top: 50px;
+    padding: 23px;
+    background-color: rgb(32, 32, 32);
 }
 
 .indice a{
@@ -35,8 +51,3 @@ body{
     color: black;
 }
 
-.indice{
-    margin-top: 50px;
-    padding: 23px;
-    background-color: rgb(32, 32, 32);
-}
