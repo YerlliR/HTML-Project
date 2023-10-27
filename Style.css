@@ -2,12 +2,15 @@ body{
     background-color: rgb(192, 187, 120);
     margin: 0;
     padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .encabezado{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgb(73, 73, 73);
     padding-top: 50px;
+    font-weight: bold;
+    
 }
 
 .tituloPrincipal{
@@ -25,6 +28,7 @@ body{
 .tituloPrincipal a{
     text-decoration: none;
     color: white;
+    font-weight:lighter;
 }
 
 
@@ -54,4 +58,10 @@ body{
 
 .mapa{
     margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.mapa p{
+    margin-left: 20px;
 }
