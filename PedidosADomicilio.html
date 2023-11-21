@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pedidos a domicilio</title>
+        <link rel="stylesheet" href="Style.css">
+        <link href="https://db.onlinewebfonts.com/c/a9f373cd848c81fa666007b98058e8cb?family=Kestrel+Script+Regular" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+
+
+
+
+
+
+        
+        
+        <div class="encabezado">
+            <div class="tituloPrincipal">
+                <a href="Index.html">Forn Passtiseria Rial</a>
+            </div>
+            <div class="indice">
+                <center>
+                    <a href="Quienes_Somos.html">Quiénes somos ?</a>
+                    <a href="Donde_Estamos.html">Dónde Estamos?</a>
+                    <a href="PedidosADomicilio.html">Pedidos a domicilio</a>
+                    <a href="">Contacto</a>
+                    <a href="">Nuestros productos</a>
+                    <a href="">Trabaja con nosotros</a>
+                    <a href="">Centro de atención al cliente</a>
+                </center>
+            </div>
+        </div>
+
+
+
+
+
+
+            <center>
+
+                <h1>Comanda</h1>
+                <form action="procesar_comanda.php" method="post" style="margin-bottom: 50px;">
+                    <!-- Información personal -->
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                    <br>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                    <br>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                    <br>
+                    <!-- Productos -->
+                    <label for="productos">Productos:</label>
+                    <select id="productos" name="productos">
+                        <option value="croissants">Croissants</option>
+                        <option value="pan">Pan</option>
+                        <option value="rosquilletas">Rosquilletas</option>
+                        <option value="napolitanas">Napolitanas</option>
+                        <option value="pasteles">Pasteles</option>
+                        <option value="comanda_especial">Comanda Especial</option>
+                    </select>
+                    <br>
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+                    <br>
+                    <!-- Comanda Especial -->
+                    <label for="comanda_especial">Comanda Especial:</label>
+                    <textarea id="comanda_especial" name="comanda_especial" rows="4" cols="50"></textarea>
+                   <br>
+                    <!-- Comentarios adicionales -->
+                    <label for="comentarios">Comentarios adicionales:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+                 <br>
+                    <!-- Botón de enviar -->
+                    <input type="submit" value="Enviar Comanda">
+                </form>
+            </center>
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <div class="tituloPie"><p>Forn Pastisseria Rial</p></div>
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>CONTACTA CON NOSOTROS</h2>
+                    <p>☎ - 963 97 11 81</p>
+                    <p>Para encargos llamé a este teléfono</p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/fornrial/?igshid=MzMyNGUyNmU2YQ%3D%3D" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2023 <b>Sergio Ricart, Eros Muñoz, Danny Calderon</b> - Todos los Derechos Reservados.</small>
+            </div>
+        </footer>
+    </body>
+</html>
