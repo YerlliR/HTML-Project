@@ -231,3 +231,41 @@ th {
 .textoQuienesSomos p:last-child {
     font-style: italic; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}

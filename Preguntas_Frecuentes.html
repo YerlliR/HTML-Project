@@ -3,18 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Forn Pastisseria Rial</title>
+        <title>Donde Estamos?</title>
         <link rel="stylesheet" href="Style.css">
-        <link href="https://db.onlinewebfonts.com/c/a9f373cd848c81fa666007b98058e8cb?family=Kestrel+Script+Regular" rel="stylesheet">
+        <link href="https://db.onlinewebfonts.com/c/a9f373cd848c81fa666007b98058e8cb?family=Kestrel+Script+Regular" rel="stylesheet">   
         <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
 
-        <!-- Pagina principal -->
-        
         <div class="encabezado">
             <div class="tituloPrincipal">
-                <a href="Index.html">Forn Pastisseria Rial</a>
+                <a href="Index.html">Forn Passtiseria Rial</a>
             </div>
             <div class="indice">
                 <center>
@@ -27,47 +26,65 @@
                     <a href="Preguntas_Frecuentes.html">Preguntas frecuentes</a>
                 </center>
             </div>
-            
         </div>
-
-   
-
-
-
-
-
-        <center>
-
-            <h2 style="margin-top: 60px;">Formulario de Solicitud de Empleo</h2>
-
-            <form action="procesar_comanda.php" method="post" style="margin-bottom: 50px;">
-                <!-- Campo de Nombre -->
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
         
-                <!-- Campo de Apellidos -->
-                <label for="apellidos">Apellidos:</label>
-                <input type="text" id="apellidos" name="apellidos" required>
-        
-                <!-- Campo de Fecha de Nacimiento -->
-                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
-                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
-        
-                <!-- Campo de Descripción -->
-                <label for="descripcion">Descripción de por qué quiere trabajar con nosotros:</label>
-                <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
-        
-                <!-- Campo de Carga de Archivo (Currículum en PDF) -->
-                <label for="curriculum">Currículum (PDF):</label>
-                <input type="file" id="curriculum" name="curriculum" accept=".pdf" required>
-        
-                <!-- Botón de Enviar -->
-                <input type="submit" value="Enviar solicitud">
-
-            </form>
 
 
-        </center>
+
+
+        
+        <div class="faq-container">
+            <div class="faq-question" onclick="toggleAnswer(1)">
+                <h3>¿Cuál es el horario de la pastelería?</h3>
+            </div>
+            <div class="faq-answer" id="answer1">
+                <p>Nuestro horario de atención es de lunes a sábado de 7:00 a.m. a 1:30 p.m. y 5:00 p.m. a 8:00 p.m.</p>
+            </div>
+
+
+
+        
+            <div class="faq-question" onclick="toggleAnswer(2)">
+                <h3>¿Ofrecen opciones sin gluten?</h3>
+            </div>
+            <div class="faq-answer" id="answer2">
+                <p>Sí, ofrecemos opciones sin gluten. Consulta nuestro menú o contacta con nosotros para más detalles.</p>
+            </div>
+        
+
+
+
+            <div class="faq-question" onclick="toggleAnswer(3)">
+                <h3>¿Puedo realizar pedidos personalizados para eventos especiales?</h3>
+            </div>
+            <div class="faq-answer" id="answer3">
+                <p>¡Claro! Estamos encantados de crear pasteles y dulces personalizados para cualquier ocasión especial. Ponte en contacto con nosotros con detalles sobre tu evento y requisitos específicos.</p>
+            </div>
+
+
+
+            <div class="faq-question" onclick="toggleAnswer(4)">
+                <h3>¿Tienen opciones vegetarianas?</h3>
+            </div>
+            <div class="faq-answer" id="answer4">
+                <p>Sí, ofrecemos opciones vegetarianas en nuestro menú. Consulta las etiquetas o pregúntanos sobre las opciones específicas.</p>
+            </div>
+        
+        </div>
+        
+        <script>
+            function toggleAnswer(id) {
+                var answer = document.getElementById('answer' + id);
+                if (answer.style.display === 'none') {
+                    answer.style.display = 'block';
+                } else {
+                    answer.style.display = 'none';
+                }
+            }
+        </script>
+        
+
+
 
 
 
@@ -102,5 +119,6 @@
                 <small>&copy; 2023 <b>Sergio Ricart, Eros Muñoz, Danny Calderon</b> - Todos los Derechos Reservados.</small>
             </div>
         </footer>
+        
     </body>
 </html>

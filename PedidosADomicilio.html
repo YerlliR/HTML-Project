@@ -27,82 +27,65 @@
                     <a href="Quienes_Somos.html">Quiénes somos ?</a>
                     <a href="Donde_Estamos.html">Dónde Estamos?</a>
                     <a href="PedidosADomicilio.html">Pedidos a domicilio</a>
-                    <a href="">Contacto</a>
+                    <a href="Contacto.html">Contacto</a>
                     <a href="NuestrosProductos.html">Nuestros productos</a>
                     <a href="TrabajaConNosotros.html">Trabaja con nosotros</a>
-                    <a href="">Centro de atención al cliente</a>
+                    <a href="Preguntas_Frecuentes.html">Preguntas frecuentes</a>
                 </center>
             </div>
         </div>
 
+        <center>
 
-
-
-
-
-            <center>
-
-                <h1>Comanda</h1>
-                <form action="procesar_comanda.php" method="post" style="margin-bottom: 50px;">
-                    <!-- Información personal -->
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                    <br>
-                    <label for="apellidos">Apellidos:</label>
-                    <input type="text" id="apellidos" name="apellidos" required>
-                    <br>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" required>
-                    <br>
-                    <label for="direccion">Dirección:</label>
-                    <input type="text" id="direccion" name="direccion" required>
-                    <br>
-                    <!-- Productos -->
-                    <label for="productos">Productos:</label>
-                    <select id="productos" name="productos">
-                        <option value="croissants">Croissants</option>
-                        <option value="pan">Pan</option>
-                        <option value="rosquilletas">Rosquilletas</option>
-                        <option value="napolitanas">Napolitanas</option>
-                        <option value="pasteles">Pasteles</option>
-                        <option value="tarta_de_manzana">Tarta de manzana</option>
-                        <option value="panquemado">Panquemado</option>
-                        <option value="Torta_de_pasas_y_nuezes">Torta de pasas y nuezes</option>
-                        <option value="Pastas_de_te">Pastas de te</option>
-                        <option value="Tarta de Fresas">Tarta de Fresas</option>
-                        <option value="comanda_especial">Comanda Especial</option>
-                    </select>
-                    <br>
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
-                    <br>
-                    <!-- Comanda Especial -->
-                    <label for="comanda_especial">Comanda Especial:</label>
-                    <textarea id="comanda_especial" name="comanda_especial" rows="4" cols="50"></textarea>
-                   <br>
-                    <!-- Comentarios adicionales -->
-                    <label for="comentarios">Comentarios adicionales:</label>
-                    <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
-                 <br>
-                    <!-- Botón de enviar -->
-                    <input type="submit" value="Enviar Comanda">
-                </form>
-            </center>
-
-
-
-
-
-
+            <h1>Comanda</h1>
+            <form action="procesar_comanda.php" method="post" style="margin-bottom: 50px;">
+                <!-- Información personal -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+                <br>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                <br>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+                <br>
+                <!-- Productos -->
+                <label for="productos">Productos:</label>
+                <select id="productos" name="productos">
+                    <option value="croissants">Croissants</option>
+                    <option value="pan">Pan</option>
+                    <option value="rosquilletas">Rosquilletas</option>
+                    <option value="napolitanas">Napolitanas</option>
+                    <option value="pasteles">Pasteles</option>
+                    <option value="tarta_de_manzana">Tarta de manzana</option>
+                    <option value="panquemado">Panquemado</option>
+                    <option value="Torta_de_pasas_y_nuezes">Torta de pasas y nuezes</option>
+                    <option value="Pastas_de_te">Pastas de te</option>
+                    <option value="Tarta de Fresas">Tarta de Fresas</option>
+                    <option value="comanda_especial">Comanda Especial</option>
+                </select>
+                <br>
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+                <br>
+                <!-- Comanda Especial -->
+                <label for="comanda_especial">Comanda Especial:</label>
+                <textarea id="comanda_especial" name="comanda_especial" rows="4" cols="50"></textarea>
+                <br>
+                <!-- Comentarios adicionales -->
+                <label for="comentarios">Comentarios adicionales:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+                <br>
+                <!-- Botón de enviar -->
+                <input type="submit" value="Enviar Comanda">
+            </form>
+        </center>
 
 
         
-
-
-
-
-
-
 
 
         <footer class="pie-pagina">
