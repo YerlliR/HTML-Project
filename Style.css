@@ -116,7 +116,8 @@ input[type="submit"]:hover {
 table {
     border-collapse: collapse;
     width: 60%;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 table, th, td {
